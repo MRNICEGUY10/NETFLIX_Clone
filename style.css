@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body
+{
+    background-color: black;
+}
+
+.main
+{
+    background-image: url('assets/images/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box
+{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    filter: opacity(0.44);
+    position: absolute;
+    top: 0px;
+}
+
+nav
+{
+    color: red;
+    max-width: 60vw;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+    position: relative;
+    z-index: 10;
+    width: 120px;
+}
+
+nav button
+{
+    position: relative;
+    z-index: 10;
+}
+
+.hero
+{
+    height: calc(100% - 65px);
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Martel Sans";
+}
+
+.hero .first
+{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .second
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .third
+{
+    font-size: 15px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.seperation
+{
+    height: 10px;
+    background-color: rgb(71, 70, 70);
+}
+
+.btn
+{
+    background-color: rgba(23, 23, 23, 0.4);
+    color: white;
+    padding: 2px 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-red-nav
+{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-red
+{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 18px;
+}
+
+.main input
+{
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 18px;
+    width: 300px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.main input::placeholder
+{
+    font-size: 15px;
+    color: white;
+}
+
+.first-section
+{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    padding: 15px 0px;
+    margin: auto;
+}
+
+
+.first-section-image
+{
+    position: relative;
+}
+
+.first-section-image img
+{
+    width: 460px;
+    position: relative;
+    z-index: 2;
+}
+
+.first-section-image video
+{
+    position: absolute;
+    top: 72px;
+    right: 64px;
+    width: 336px;
+}
+
+.first-section .head1
+{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.first-section .para1
+{
+    font-size: 20px;
+}
+
+.FAQ
+{
+    color: white;
+    padding-bottom: 30px;
+}
+
+.FAQ h2
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+}
+
+.FAQ .faqbox
+{
+    max-width: 60vw;
+    background-color: rgb(50, 48, 48);
+    padding: 20px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQ .faqbox:hover
+{
+    background-color: rgb(78, 73, 73);
+    transition: all 0.2s ease;
+}
+
+.FAQ input
+{
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 18px;
+    width: 300px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.FAQ input::placeholder
+{
+    font-size: 15px;
+    color: white;
+}
+
+.below
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer
+{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer .questions
+{
+    padding: 15px 0px 10px 0px;
+}
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px 0px;
+}
+
+.footer .footer-items
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-items a
+{
+    color: rgb(135, 135, 135);
+}
+
+@media screen and (max-width: 1100px) {
+    .first-section
+    {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    nav
+    {
+        max-width: 90%;
+    }
+
+    .hero div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .below
+    {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    
+    .below button
+    {
+        margin-top: 10px;
+    }
+}
